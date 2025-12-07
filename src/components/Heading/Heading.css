@@ -1,0 +1,12 @@
+.heading {
+    text-align: center;
+    padding: 5%;
+}
+
+.heading span {
+    font-size: 2rem;
+    background: rgba(255, 165, 0, .2);
+    color: var(--red);
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+}
