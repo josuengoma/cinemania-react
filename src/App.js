@@ -1,12 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header/Header';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Router, Routes } from 'react-router-dom';
 import Home from './pages/home/Home';
 import Blog from './pages/blog/Blog';
-import Admin from './pages/admin/Admin';
 import Footer from './components/Footer/Footer';
 import Contact from './components/Contact/Contact';
+import Single from './pages/single/Single';
+import Dashboard from './pages/dashboard/Dashboard';
+import Login from './pages/login/Login';
+import All from './pages/edits/All';
+import EditSingle from './pages/edits/EditSingle';
+import { FilmProvider } from './contexts/FilmContext';
 
 
 function App() {
@@ -14,11 +19,19 @@ function App() {
     <div className="App">
       <Header />
 
-      <Routes>
-        <Route path='/' element={<Home />}></Route>
-        <Route path='/blog' element={<Blog />}></Route>
-        <Route path='/admin' element={<Admin />}></Route>
-      </Routes>
+      <FilmProvider>
+        <Routes>
+          <Route path='/' element={<Home />}></Route>
+          <Route path='/blog' element={<Blog />}></Route>
+          <Route path='/dashboard' element={<Dashboard />}></Route>
+          <Route path='/login' element={<Login />}></Route>
+          <Route path='/dashboard/editAll' element={<All />}></Route>
+          <Route path='/single/:id' element={<Single />}></Route>
+          <Route path='/editSingle/:id' element={<EditSingle />}></Route>
+        </Routes>
+      </FilmProvider>
+
+
 
 
       <Contact />

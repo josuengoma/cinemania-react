@@ -1,0 +1,48 @@
+.editAll .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.editAll h2 {
+    padding: 20px;
+}
+
+.editAll .box-container .box {
+    flex: 30%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .2);
+}
+
+.editAll .box-container .box .content {
+    padding: 5px;
+}
+
+.editAll .box-container .box .content h3 {
+    font-size: 18px;
+    color: var(--black);
+}
+
+.editAll .box-container .box .content p {
+    font-size: 15px;
+    color: var(--black);
+    padding: 1rem;
+}
+
+.editAll .box-container .box .content .stars i {
+    font-size: 15px;
+    color: var(--yellow);
+}
+
+.editAll .box-container .box .content .price {
+    font-size: 15px;
+    color: var(--black);
+    padding-top: 2px;
+}
+
+.editAll .box-container .box .content .price span {
+    color: var(--black);
+    font-size: 15px;
+    text-decoration: line-through;
+}

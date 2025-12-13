@@ -14,7 +14,8 @@ function Header() {
                 <nav class="navbar">
                     <Link to="/">Home</Link>
                     <Link to="/blog">Blog</Link>
-                    <Link to="/admin">Admin</Link>
+                    <Link to="/dashboard">Dashboard</Link>
+                    <Link to="/login">Login</Link>
                 </nav>
                 <div class="icons">
                     <form action="" class="search-bar-container">
