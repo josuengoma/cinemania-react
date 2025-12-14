@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { FilmContext } from '../../contexts/FilmContext';
 import { FaBookOpen, FaFilm, FaFistRaised, FaGhost, FaHeart, FaLaugh, FaTheaterMasks, FaVideo } from 'react-icons/fa'
+import './CategorieList.css'
 
 const CategorieList = () => {
 
@@ -28,7 +29,7 @@ const CategorieList = () => {
 
     return (
         <div>
-            <section class="dashboard" id="revu">
+            <section class="CategorieList" >
                 <div class="box-container">
 
                     {Object.entries(categories).map(([cat, count]) => (

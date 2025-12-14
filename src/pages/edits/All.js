@@ -81,7 +81,9 @@ const All = () => {
 
 
             <Heading title="Toutes-categories" />
-            <section className="editAll" id="catalogue">
+
+            <section className="editAll" >
+
                 <div className="box-container">
                     {currentFilms.map((film) => (
                         <div className="box">
@@ -122,7 +124,7 @@ const All = () => {
             </section >
 
 
-            <section class="login" id="login">
+            <section class="form" >
                 <h2 id="signin">Ajouter un nouveau post</h2>
                 <div className="row">
                     <form onSubmit={handleAddFilm} style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
@@ -198,9 +200,9 @@ const All = () => {
                                     required
                                 />
                             </div>
+                            <button type="submit" className="btn">Ajouter le film</button>
                         </div>
 
-                        <button type="submit" className="btn">Ajouter le film</button>
                     </form>
 
                 </div>

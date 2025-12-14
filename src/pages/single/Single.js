@@ -1,22 +1,18 @@
 import React, { useState, useContext } from 'react'
 import "./Single.css"
-import { useNavigate, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 // import { films as filmsData } from '../../data/Films'
 import { FaMoneyBill, FaPlay, FaShoppingCart, FaStar } from 'react-icons/fa'
 import { FilmContext } from '../../contexts/FilmContext'
 
 
-const Single = () => {
 
-    // const { id } = useParams();
-    // const film = films.find(f => f.id === parseInt(id));
+const Single = () => {
 
 
     // important
-    // const [films, setFilms] = useState(filmsData);
     const { id } = useParams();
     const { films, updateFilm } = useContext(FilmContext);
-    const navigate = useNavigate();
     const film = films.find(f => f.id === parseInt(id));
 
     const [title, setTitle] = useState(film.title);
@@ -55,7 +51,7 @@ const Single = () => {
 
 
 
-            <section className="watch" id="watch">
+            <section className="main-single" >
                 <div className="box-container">
                     <div className="box">
                         {image && <img src={image} alt="aperçu" />}
@@ -68,9 +64,9 @@ const Single = () => {
                         <p>
                             {film.description}
                         </p>
-                        <a href="#" className="btn">Lecture <FaPlay /></a>
-                        <a href="#" className="btn">Achat <FaMoneyBill /></a>
-                        <a href="#" className="btn">Ajouter <FaShoppingCart /></a>
+                        <a href=".btn" className="btn">Lecture <FaPlay /></a>
+                        <a href=".btn" className="btn">Achat <FaMoneyBill /></a>
+                        <a href=".btn" className="btn">Ajouter <FaShoppingCart /></a>
                     </div>
 
                 </div>
@@ -101,7 +97,7 @@ const Single = () => {
                 </div>
             </section>
 
-            <section className="login" id="editPost">
+            <section className="form" >
                 <h2 id="signin">Editer ce film</h2>
 
                 <div className="row">
@@ -157,7 +153,7 @@ const Single = () => {
                                 <textarea onChange={(e) => setAvis(e.target.value)} cols="30" rows="10" value={avis}></textarea>
                             </div>
                         </div>
-                        <input type="submit" name="updatePost" className="btn" value="Créer" />
+                        <input type="submit" name="updatePost" className="btn" value="Modifier" />
                     </form>
                 </div>
 

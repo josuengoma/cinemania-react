@@ -14,8 +14,12 @@ const Box = ({ id, image, title, description, price1, price2, contentBtn }) => {
 
     return (
 
-        <div className="box ">
-            <img src={image} alt={title} />
+
+        <div className="box">
+            <div className='box-img'>
+                <img src={image} alt={title} />
+            </div>
+
             <div className="content">
                 <h3>{title}</h3>
                 <p>{description}</p>
@@ -29,6 +33,8 @@ const Box = ({ id, image, title, description, price1, price2, contentBtn }) => {
                 <Button contentBtn="Regarder maintenant" typeBtn="text" onClick={() => handleClick(id)} />
             </div>
         </div>
+
+
 
 
     );

@@ -13,10 +13,10 @@ function Footer() {
                     </div>
                     <div className="box">
                         <h3>Retrouvez notre plateforme</h3>
-                        <a href="#">RDC</a>
-                        <a href="#">Cameroun</a>
-                        <a href="#">Afrique du sud</a>
-                        <a href="#">france</a>
+                        <a href="./rdc">RDC</a>
+                        <a href="./rdc">Cameroun</a>
+                        <a href="./rdc">Afrique du sud</a>
+                        <a href="./rdc">france</a>
                     </div>
                     <div className="box">
                         <h3>liens rapides</h3>
@@ -28,10 +28,10 @@ function Footer() {
                     </div>
                     <div className="box">
                         <h3>Suivez-nous sur</h3>
-                        <a href="#"><i className="fa fa-facebook fa-1x"></i> facebook</a>
-                        <a href="#"><i className="fa fa-instagram fa-1x"></i> instagram</a>
-                        <a href="#"><i className="fa fa-twitter fa-1x"></i> twitter</a>
-                        <a href="#"><i className="fa fa-linkedin fa-1x"></i> linkedin</a>
+                        <a href="./facebook"><i className="fa fa-facebook fa-1x"></i> facebook</a>
+                        <a href="./facebook"><i className="fa fa-instagram fa-1x"></i> instagram</a>
+                        <a href="./facebook"><i className="fa fa-twitter fa-1x"></i> twitter</a>
+                        <a href="./facebook"><i className="fa fa-linkedin fa-1x"></i> linkedin</a>
                     </div>
 
                 </div>

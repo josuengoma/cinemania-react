@@ -1,50 +1,50 @@
-/* section watch*/
-.watch {
+/* section main-single*/
+.main-single {
     padding: 7rem 5rem;
     background: linear-gradient(rgba(50, 50, 50, 0.7), rgba(0, 0, 0, 0.7));
 }
 
-.watch .box-container {
+.main-single .box-container {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
 }
 
-.watch .box-container .box {
+.main-single .box-container .box {
     flex: 40%;
     overflow: hidden;
     height: 100%;
 }
 
-.watch .box-container .box img {
+.main-single .box-container .box img {
     height: 25rem;
     width: 20rem;
     border-radius: 5px;
 }
 
-.watch .box-container .box img:hover {
+.main-single .box-container .box img:hover {
     box-shadow: 4px 4px 4px rgba(0, 0, 0, .2);
 }
 
-.watch .box-container .box h3 {
+.main-single .box-container .box h3 {
     font-size: 3rem;
     color: white;
     padding: 2rem;
     text-transform: uppercase;
 }
 
-.watch .box-container .box p {
+.main-single .box-container .box p {
     font-size: 1rem;
     color: white;
     padding: 1rem;
 }
 
-.watch .box-container .box .btn {
+.main-single .box-container .box .btn {
     font-size: 1.5rem;
     margin: 2rem;
 }
 
-.watch .box-container2 .box2 {
+.main-single .box-container2 .box2 {
     margin-top: 3rem;
     padding: 1rem;
     display: grid;
@@ -52,19 +52,19 @@
     border-top: 5px dotted rgba(160, 160, 160, 0.3);
 }
 
-.watch .box-container2 .box2 h3 {
+.main-single .box-container2 .box2 h3 {
     padding: 1rem;
     font-size: 1.5rem;
     color: white;
     text-align: center;
 }
 
-.watch .box-container2 .box2 .stars {
+.main-single .box-container2 .box2 .stars {
     color: var(--yellow);
     padding: 1rem;
 }
 
-.watch .box-container2 .box2 p {
+.main-single .box-container2 .box2 p {
     padding: .5rem;
     color: white;
 }
@@ -72,12 +72,8 @@
 
 
 
-.inputBox .inputGroup label {
-    margin: 30px 0 10px 0;
-    font-weight: bold;
-    display: block;
-}
 
 
 
-/* fin section watch*/
+
+/* fin section main-single*/

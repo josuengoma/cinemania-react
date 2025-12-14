@@ -1,0 +1,40 @@
+.CategorieList .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.CategorieList .box-container a {
+    flex: 30%;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.CategorieList .box-container .box i {
+    padding: 10px;
+    font-size: 1.5rem;
+    color: var(--red);
+}
+
+.CategorieList .box-container .box h3 {
+    font-size: 20px;
+    color: var(--black);
+}
+
+.CategorieList .box-container .box p {
+    font-size: 15px;
+    color: var(--black);
+    padding: 20px;
+}
+
+.CategorieList .box-container .box:hover {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .2);
+}
+
+
+.inputBox .inputGroup label {
+    margin: 30px 0 10px 0;
+    font-weight: bold;
+    display: block;
+}

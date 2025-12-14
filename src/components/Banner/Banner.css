@@ -1,4 +1,4 @@
-.home {
+.banner {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -10,18 +10,18 @@
     background-position: initial;
 }
 
-.home .content {
+.banner .content {
     text-align: center;
 }
 
-.home .content h3 {
+.banner .content h3 {
     font-size: 30px;
     color: #fff;
     text-transform: uppercase;
     padding: 5px;
 }
 
-.home .content p {
+.banner .content p {
     font-size: 25px;
     color: #fff;
     padding: 5px;

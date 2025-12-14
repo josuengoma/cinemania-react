@@ -5,7 +5,7 @@ import './Home.css';
 
 import { FilmContext } from "../../contexts/FilmContext";
 import { useContext } from "react";
-import { FaBookOpen, FaFistRaised, FaHeart, FaLaugh, FaTheaterMasks, FaVideo } from "react-icons/fa";
+import { FaBookOpen, FaFistRaised, FaGhost, FaHeart, FaLaugh, FaTheaterMasks, FaVideo } from "react-icons/fa";
 import PaginatedList from "../../components/Pagination/PaginatedList";
 
 
@@ -21,10 +21,10 @@ function Home() {
         <>
             <Banner />
 
-            {/* Section revu */}
-            <section class="revu" id="revu">
+            {/* Section categorie-Home */}
+            <section class="categorie-Home" >
 
-                <Heading title="revu" />
+                <Heading title="Catégories" />
 
                 <div class="box-container">
 
@@ -113,14 +113,28 @@ function Home() {
                         </div>
                     </a>
 
+                    <a href="#categorie-film">
+                        <div class="box">
+                            <FaGhost style={styleIcon} size="30" />
+                            <h3>
+                                Horeur
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quae exercitationem doloremque,
+                                adipisci aut veritatis ad iusto dicta molestias in beatae accusamus mollitia sunt porro rerum
+                                tenetur ullam officia odio.
+                            </p>
+                        </div>
+                    </a>
+
 
                 </div>
             </section>
-            {/* Fin section revu */}
+            {/* Fin section categorie-Home */}
 
 
-            {/* Section nouveaux  */}
-            <section class="nouveaux" id="nouveaux">
+            {/* Section main-Home  */}
+            <section class="main-Home" id="nouveaux">
 
                 <Heading title="nouveaux" />
 
@@ -134,9 +148,7 @@ function Home() {
 
 
             </section >
-            {/* Fin Section nouveaux */}
-
-
+            {/* Fin Section main-Home */}
 
 
 

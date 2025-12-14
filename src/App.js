@@ -4,7 +4,6 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './pages/home/Home';
 import Blog from './pages/blog/Blog';
 import Footer from './components/Footer/Footer';
-import Contact from './components/Contact/Contact';
 import Single from './pages/single/Single';
 import Dashboard from './pages/dashboard/Dashboard';
 import Login from './pages/login/Login';
@@ -31,7 +30,7 @@ function App() {
 
 
 
-      <Contact />
+
       <Footer />
     </div>
   );

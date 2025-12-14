@@ -8,7 +8,7 @@ import Pagination from '../../components/Pagination/Pagination'
 
 
 const Blog = () => {
-    const { films, addFilm, deleteFilm } = useContext(FilmContext);
+    const { films } = useContext(FilmContext);
     const handleClick = useRedirect()
 
     // Pagination
@@ -24,7 +24,7 @@ const Blog = () => {
     return (
         <div>
 
-            <section class="annonces" id="annonces">
+            <section class="main-Blog" id="annonces">
                 <Heading title="Annonces" />
 
                 <div class="box-container">

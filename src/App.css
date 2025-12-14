@@ -1,6 +1,106 @@
+/* les variables et style standard*/
 :root {
   --black: #2a2926;
   --red: rgb(204, 32, 32);
   --yellow: rgba(242, 229, 44, 0.8);
   --white: #fff;
 }
+
+
+
+
+.active {
+  color: rgb(204, 32, 32) !important;
+}
+
+* {
+  font-family: 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+
+
+section,
+footer {
+  padding: 2% 10%;
+}
+
+
+
+/* section form : tous les formulaires */
+.form {
+  padding: 4% 20%;
+}
+
+.form h2 {
+  color: var(--red);
+  font-size: 2rem;
+  padding: 5px;
+}
+
+.form .row form {
+  padding: 5px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, .2);
+  border-radius: 5px;
+}
+
+.form .row form .inputBox {
+  padding: 5px;
+}
+
+.form .row form .inputBox input {
+  width: 50%;
+  padding: 1rem;
+  border: 2px solid rgba(0, 0, 0, .2);
+  font-size: 1rem;
+  color: var(--black);
+  text-transform: none;
+}
+
+.form .row form .inputBox h3 {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  color: var(--black);
+}
+
+.form .row form .inputBox h4 {
+  font-size: 15px;
+  padding: 1rem 0;
+  color: var(--black);
+}
+
+.form .row form .inputBox textarea {
+  width: 50%;
+  padding: 1rem;
+  border: 2px solid rgba(0, 0, 0, .2);
+  font-size: 1rem;
+  color: var(--black);
+  text-transform: none;
+}
+
+.form .row form .inputBox select {
+  width: 50%;
+  padding: 1rem;
+  border: 2px solid rgba(0, 0, 0, .2);
+  font-size: 1rem;
+  color: var(--black);
+  text-transform: none;
+}
+
+.form .inputBox .inputGroup label {
+  margin: 30px 0 10px 0;
+  font-weight: bold;
+  display: block;
+}
+
+/* section form */

@@ -11,7 +11,8 @@ const Login = () => {
     return (
         <>
             <Heading title="Connexion" />
-            <section className="login" id="login">
+
+            <section className="form" id="login">
                 <h2 id="signin">Se connecter</h2>
                 <div className="row">
                     <form method="POST">
@@ -27,8 +28,8 @@ const Login = () => {
 
                         </div>
                         <div style={styleBtnForm}>
-                            <Button contentBtn="Se connecter2" typeBtn="submit" nameBtn="login" />
-                            <a href="" class="btn">s'abonner</a>
+                            <Button contentBtn="Se connecter" typeBtn="submit" />
+                            <Button contentBtn="S'abonner" typeBtn="link" />
                         </div>
                     </form>
                 </div >

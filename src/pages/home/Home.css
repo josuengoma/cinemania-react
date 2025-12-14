@@ -1,104 +1,84 @@
-/* tous les sections*/
-section,
-footer {
-    padding: 2% 10%;
-}
-
-.box img {
-    height: 15rem;
-    width: 14rem;
-}
-
-/* fin tous les sections*/
-
-
-
-/* la section revu */
-.revu .box-container {
+/* la section categorie-Home */
+.categorie-Home .box-container {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
 }
 
-.revu .box-container a {
+.categorie-Home .box-container a {
     flex: 30%;
     border-radius: 5px;
     padding: 10px;
     text-align: center;
 }
 
-.revu .box-container .box i {
+.categorie-Home .box-container .box i {
     padding: 10px;
     font-size: 1.5rem;
     color: var(--red);
 }
 
-.revu .box-container .box h3 {
+.categorie-Home .box-container .box h3 {
     font-size: 20px;
     color: var(--black);
 }
 
-.revu .box-container .box p {
+.categorie-Home .box-container .box p {
     font-size: 15px;
     color: var(--black);
     padding: 20px;
 }
 
-.revu .box-container .box:hover {
+.categorie-Home .box-container .box:hover {
     box-shadow: 4px 4px 4px rgba(0, 0, 0, .2);
 }
 
-/* fin section revu */
+/* fin section categorie-Home */
 
-/* section nouveau */
-.nouveaux .box-container {
+/* section main-Home */
+.main-Home .box-container {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
 }
 
-.nouveaux .box-container .box {
+.main-Home .box-container .box {
     flex: 30%;
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, .2);
 }
 
-.nouveaux .box-container .box .content {
+.main-Home .box-container .box .content {
     padding: 5px;
 }
 
-.nouveaux .box-container .box .content h3 {
+.main-Home .box-container .box .content h3 {
     font-size: 18px;
     color: var(--black);
 }
 
-.nouveaux .box-container .box .content p {
+.main-Home .box-container .box .content p {
     font-size: 15px;
     color: var(--black);
     padding: 1rem 0;
 }
 
-.nouveaux .box-container .box .content .stars i {
+.main-Home .box-container .box .content .stars i {
     font-size: 15px;
     color: var(--yellow);
 }
 
-.nouveaux .box-container .box .content .price {
+.main-Home .box-container .box .content .price {
     font-size: 15px;
     color: var(--black);
     padding-top: 2px;
 }
 
-.nouveaux .box-container .box .content .price span {
+.main-Home .box-container .box .content .price span {
     color: var(--black);
     font-size: 15px;
     text-decoration: line-through;
 }
 
-/* fin section nouveau */
-
-
-/* section nouveau */
-
-/* fin section nouveau */
+/* fin section categorie-Home */
