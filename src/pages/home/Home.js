@@ -140,12 +140,7 @@ function Home() {
 
                 <h2 id="categorie-film" style={{ marginBottom: '40px' }}>Films</h2>
 
-                <div class="box-container">
-
-                    <PaginatedList data={films} Component={Box} itemsPerPage={6} />
-
-                </div>
-
+                <PaginatedList data={films} Component={Box} itemsPerPage={6} />
 
             </section >
             {/* Fin Section main-Home */}
