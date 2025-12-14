@@ -1,12 +1,9 @@
 import React, { useState, useContext } from 'react'
 import Heading from '../../components/Heading/Heading'
 import "./Edits.css"
-import { films as filmsData } from '../../data/Films'
-import Box from '../../components/Box/Box'
 import Button from '../../components/Button/Button'
-import { Link, useNavigate, useParams } from 'react-router-dom'
 import { useRedirect } from '../../hooks/useRedirect'
-import { FaEdit, FaEye, FaHome, FaTrash, FaStar } from 'react-icons/fa'
+import { FaEdit, FaEye, FaTrash, FaStar } from 'react-icons/fa'
 import { FilmContext } from '../../contexts/FilmContext'
 import Pagination from '../../components/Pagination/Pagination'
 
@@ -55,7 +52,7 @@ const All = () => {
         };
         // setFilms([newFilm, ...films]);
         addFilm(newFilm);
-
+        alert('Film ajouté  avec succès')
         // Reinitialiser les champs
         setTitle('');
         setPrice1('');
@@ -105,7 +102,7 @@ const All = () => {
 
                                 ))}
                             </div>
-                            <p>Prix : {film.price2}</p>
+                            <p>Prix : {film.price1}$</p>
                             <div style={styleFooterBox}>
                                 <Button contentBtn={<FaEye />} typeBtn="text" onClick={() => handleClick(film.id)} />
                                 <Button contentBtn={<FaEdit />} typeBtn="text" onClick={() => handleClick(film.id)} />
@@ -155,6 +152,7 @@ const All = () => {
                                     <option value="Animation">Animation</option>
                                     <option value="Documentaire">Documentaire</option>
                                     <option value="Romantique">Romantique</option>
+                                    <option value="Horeur">Horeur</option>
                                 </select>
                             </div>
 
