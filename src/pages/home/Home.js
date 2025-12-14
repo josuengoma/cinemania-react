@@ -1,18 +1,22 @@
 import Banner from "../../components/Banner/Banner";
 import Box from "../../components/Box/Box";
-import Button from "../../components/Button/Button";
 import Heading from "../../components/Heading/Heading";
 import './Home.css';
 
 import { FilmContext } from "../../contexts/FilmContext";
 import { useContext } from "react";
-import { FaBolt, FaBookOpen, FaFilm, FaFistRaised, FaHeart, FaLaugh, FaMagic, FaTheaterMasks, FaVideo } from "react-icons/fa";
+import { FaBookOpen, FaFistRaised, FaHeart, FaLaugh, FaTheaterMasks, FaVideo } from "react-icons/fa";
+import PaginatedList from "../../components/Pagination/PaginatedList";
+
 
 function Home() {
     const styleIcon = {
         color: "rgb(204, 32, 32)",
     };
-    const { films, addFilm, deleteFilm } = useContext(FilmContext);
+    const { films } = useContext(FilmContext);
+
+
+
     return (
         <>
             <Banner />
@@ -120,16 +124,16 @@ function Home() {
 
                 <Heading title="nouveaux" />
 
-                <h2 id="categorie-film">Films</h2>
+                <h2 id="categorie-film" style={{ marginBottom: '40px' }}>Films</h2>
 
                 <div class="box-container">
-                    {films.map((film) => (
-                        <Box key={film.id} id={film.id} image={film.image} title={film.title} description={film.description} price1={film.price1} price2={film.price2} contentBtn={film.contentBtn} />
-                    ))}
 
+                    <PaginatedList data={films} Component={Box} itemsPerPage={6} />
 
                 </div>
-            </section>
+
+
+            </section >
             {/* Fin Section nouveaux */}
 
 

@@ -8,6 +8,7 @@ import { Link, useNavigate, useParams } from 'react-router-dom'
 import { useRedirect } from '../../hooks/useRedirect'
 import { FaEdit, FaEye, FaHome, FaTrash, FaStar } from 'react-icons/fa'
 import { FilmContext } from '../../contexts/FilmContext'
+import Pagination from '../../components/Pagination/Pagination'
 
 
 const All = () => {
@@ -65,7 +66,15 @@ const All = () => {
     };
 
 
+    // Pagination
+    const [currentPage, setCurrentPage] = useState(1);
+    const filmsPerPage = 6;
 
+    const indexOfLastFilm = currentPage * filmsPerPage;
+    const indexOfFirstFilm = indexOfLastFilm - filmsPerPage;
+    const currentFilms = films.slice(indexOfFirstFilm, indexOfLastFilm);
+
+    const totalPages = Math.ceil(films.length / filmsPerPage);
 
 
 
@@ -77,7 +86,7 @@ const All = () => {
             <Heading title="Toutes-categories" />
             <section className="editAll" id="catalogue">
                 <div className="box-container">
-                    {films.map((film) => (
+                    {currentFilms.map((film) => (
                         <div className="box">
                             <div className="box2">
                                 <img src={film.image} alt="" />
@@ -107,6 +116,12 @@ const All = () => {
                     ))}
 
                 </div>
+
+                <Pagination
+                    totalPages={totalPages}
+                    currentPage={currentPage}
+                    onPageChange={setCurrentPage}
+                />
             </section >
 
 

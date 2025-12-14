@@ -5,6 +5,12 @@ import film_3 from "../assets/images/film-3.jpg"
 import film_4 from "../assets/images/film-4.jpg"
 import film_5 from "../assets/images/film-5.jpg"
 import film_6 from "../assets/images/film-6.jpg"
+import film_7 from "../assets/images/film-7.jpg"
+import film_8 from "../assets/images/film-8.jpg"
+import film_9 from "../assets/images/film-9.jpg"
+import film_10 from "../assets/images/film-10.jpg"
+import film_11 from "../assets/images/film-11.jpg"
+import film_12 from "../assets/images/film-12.jpg"
 
 export const films = [
     {
@@ -71,6 +77,78 @@ export const films = [
         id: 6,
         image: film_6,
         title: "Contenu-6",
+        description: "Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit. Rem Autem In Ratione! Atque Iure, Dignissimos Iusto Sequi Voluptate, Perferendis Quo Alias Sapiente Adipisci Facilis Odio, Officia Sunt Perspiciatis Eveniet Aliquam?",
+        price1: "25$",
+        price2: "50$",
+        categorie: "film",
+        episode: 23,
+        avis: "Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit. Rem Autem In Ratione! Atque Iure, Dignissimos Iusto Sequi Voluptate, Perferendis Quo Alias Sapiente Adipisci Facilis Odio, Officia Sunt Perspiciatis Eveniet Aliquam?",
+        created: "6 dec 2025",
+    },
+    {
+        id: 7,
+        image: film_7,
+        title: "Contenu-7",
+        description: "Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit. Rem Autem In Ratione! Atque Iure, Dignissimos Iusto Sequi Voluptate, Perferendis Quo Alias Sapiente Adipisci Facilis Odio, Officia Sunt Perspiciatis Eveniet Aliquam?",
+        price1: "25$",
+        price2: "50$",
+        categorie: "film",
+        episode: 23,
+        avis: "Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit. Rem Autem In Ratione! Atque Iure, Dignissimos Iusto Sequi Voluptate, Perferendis Quo Alias Sapiente Adipisci Facilis Odio, Officia Sunt Perspiciatis Eveniet Aliquam?",
+        created: "6 dec 2025",
+    },
+    {
+        id: 8,
+        image: film_8,
+        title: "Contenu-8",
+        description: "Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit. Rem Autem In Ratione! Atque Iure, Dignissimos Iusto Sequi Voluptate, Perferendis Quo Alias Sapiente Adipisci Facilis Odio, Officia Sunt Perspiciatis Eveniet Aliquam?",
+        price1: "25$",
+        price2: "50$",
+        categorie: "film",
+        episode: 23,
+        avis: "Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit. Rem Autem In Ratione! Atque Iure, Dignissimos Iusto Sequi Voluptate, Perferendis Quo Alias Sapiente Adipisci Facilis Odio, Officia Sunt Perspiciatis Eveniet Aliquam?",
+        created: "6 dec 2025",
+    },
+    {
+        id: 9,
+        image: film_9,
+        title: "Contenu-9",
+        description: "Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit. Rem Autem In Ratione! Atque Iure, Dignissimos Iusto Sequi Voluptate, Perferendis Quo Alias Sapiente Adipisci Facilis Odio, Officia Sunt Perspiciatis Eveniet Aliquam?",
+        price1: "25$",
+        price2: "50$",
+        categorie: "film",
+        episode: 23,
+        avis: "Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit. Rem Autem In Ratione! Atque Iure, Dignissimos Iusto Sequi Voluptate, Perferendis Quo Alias Sapiente Adipisci Facilis Odio, Officia Sunt Perspiciatis Eveniet Aliquam?",
+        created: "6 dec 2025",
+    },
+    {
+        id: 10,
+        image: film_10,
+        title: "Contenu-10",
+        description: "Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit. Rem Autem In Ratione! Atque Iure, Dignissimos Iusto Sequi Voluptate, Perferendis Quo Alias Sapiente Adipisci Facilis Odio, Officia Sunt Perspiciatis Eveniet Aliquam?",
+        price1: "25$",
+        price2: "50$",
+        categorie: "film",
+        episode: 23,
+        avis: "Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit. Rem Autem In Ratione! Atque Iure, Dignissimos Iusto Sequi Voluptate, Perferendis Quo Alias Sapiente Adipisci Facilis Odio, Officia Sunt Perspiciatis Eveniet Aliquam?",
+        created: "6 dec 2025",
+    },
+    {
+        id: 11,
+        image: film_11,
+        title: "Contenu-11",
+        description: "Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit. Rem Autem In Ratione! Atque Iure, Dignissimos Iusto Sequi Voluptate, Perferendis Quo Alias Sapiente Adipisci Facilis Odio, Officia Sunt Perspiciatis Eveniet Aliquam?",
+        price1: "25$",
+        price2: "50$",
+        categorie: "film",
+        episode: 23,
+        avis: "Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit. Rem Autem In Ratione! Atque Iure, Dignissimos Iusto Sequi Voluptate, Perferendis Quo Alias Sapiente Adipisci Facilis Odio, Officia Sunt Perspiciatis Eveniet Aliquam?",
+        created: "6 dec 2025",
+    },
+    {
+        id: 12,
+        image: film_12,
+        title: "Contenu-12",
         description: "Lorem Ipsum Dolor, Sit Amet Consectetur Adipisicing Elit. Rem Autem In Ratione! Atque Iure, Dignissimos Iusto Sequi Voluptate, Perferendis Quo Alias Sapiente Adipisci Facilis Odio, Officia Sunt Perspiciatis Eveniet Aliquam?",
         price1: "25$",
         price2: "50$",

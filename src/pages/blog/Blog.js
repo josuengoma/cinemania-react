@@ -1,14 +1,25 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import "./Blog.css"
 import Heading from '../../components/Heading/Heading'
 import Button from '../../components/Button/Button'
 import { useRedirect } from '../../hooks/useRedirect'
 import { FilmContext } from '../../contexts/FilmContext'
+import Pagination from '../../components/Pagination/Pagination'
 
 
 const Blog = () => {
     const { films, addFilm, deleteFilm } = useContext(FilmContext);
     const handleClick = useRedirect()
+
+    // Pagination
+    const [currentPage, setCurrentPage] = useState(1);
+    const filmsPerPage = 6;
+
+    const indexOfLastFilm = currentPage * filmsPerPage;
+    const indexOfFirstFilm = indexOfLastFilm - filmsPerPage;
+    const currentFilms = films.slice(indexOfFirstFilm, indexOfLastFilm);
+
+    const totalPages = Math.ceil(films.length / filmsPerPage);
 
     return (
         <div>
@@ -18,7 +29,7 @@ const Blog = () => {
 
                 <div class="box-container">
 
-                    {films.map((film) => (
+                    {currentFilms.map((film) => (
                         <div class="box">
                             <div class="box2">
                                 <img src={film.image} alt="" />
@@ -40,6 +51,12 @@ const Blog = () => {
 
 
                 </div>
+
+                <Pagination
+                    totalPages={totalPages}
+                    currentPage={currentPage}
+                    onPageChange={setCurrentPage}
+                />
             </section>
 
         </div>
