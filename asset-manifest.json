@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/cinemania-react/static/css/main.6278157e.css",
+    "main.js": "/cinemania-react/static/js/main.5312b36a.js",
+    "static/js/453.20175517.chunk.js": "/cinemania-react/static/js/453.20175517.chunk.js",
+    "static/media/film-12.jpg": "/cinemania-react/static/media/film-12.7de690d546ce92eda88b.jpg",
+    "static/media/film-9.jpg": "/cinemania-react/static/media/film-9.7cc014f7df14c665340c.jpg",
+    "static/media/film-1.jpg": "/cinemania-react/static/media/film-1.600a75f9780830921c12.jpg",
+    "static/media/film-4.jpg": "/cinemania-react/static/media/film-4.edb3d53859d48c80b7fd.jpg",
+    "static/media/film-2.jpg": "/cinemania-react/static/media/film-2.116fd1a256e9b5b57f8d.jpg",
+    "static/media/film-3.jpg": "/cinemania-react/static/media/film-3.f64842c91c9cb99b010c.jpg",
+    "static/media/film-8.jpg": "/cinemania-react/static/media/film-8.e8af3ab860c91ab9e97d.jpg",
+    "static/media/film-7.jpg": "/cinemania-react/static/media/film-7.8c21d1db33c4b0e80183.jpg",
+    "static/media/film-6.jpg": "/cinemania-react/static/media/film-6.4cec5382f0b36d3c5352.jpg",
+    "static/media/film-5.jpg": "/cinemania-react/static/media/film-5.04657dbaa74a2cc82d99.jpg",
+    "static/media/banner.jpg": "/cinemania-react/static/media/banner.53b2d04085db6098f968.jpg",
+    "static/media/film-10.jpg": "/cinemania-react/static/media/film-10.53b2d04085db6098f968.jpg",
+    "static/media/film-11.jpg": "/cinemania-react/static/media/film-11.e5fe231eff0b299f4d4b.jpg",
+    "static/media/logo.svg": "/cinemania-react/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/cinemania-react/index.html",
+    "main.6278157e.css.map": "/cinemania-react/static/css/main.6278157e.css.map",
+    "main.5312b36a.js.map": "/cinemania-react/static/js/main.5312b36a.js.map",
+    "453.20175517.chunk.js.map": "/cinemania-react/static/js/453.20175517.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6278157e.css",
+    "static/js/main.5312b36a.js"
+  ]
+}
